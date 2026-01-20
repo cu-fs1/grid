@@ -52,8 +52,6 @@
       <h2>Example 4: Bento (named areas)</h2>
       <div class="grid bento-areas">
         <div class="box a-hero">Hero</div>
-        <div class="box a-stats">Stats</div>
-        <div class="box a-chart">Chart</div>
         <div class="box a-notes">Notes</div>
         <div class="box a-cta">CTA</div>
         <div class="box a-mini">Mini</div>
@@ -122,5 +120,57 @@
         <div class="box short">Centered</div>
       </div>
     </section>
+<section>
+  <h2>Example 11: auto-fill (Creates Empty Tracks)</h2>
+  <p><strong>auto-fill</strong> creates as many grid tracks as will fit in the container, <em>including empty
+      tracks</em>. Empty tracks are created even if there are no items to fill them. This is useful when you want to
+    maintain consistent spacing.</p>
+  <div class="grid auto-fill-demo">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+  <p class="note">💡 Notice: With only 4 items, auto-fill creates empty tracks on the right. Items don't stretch to fill
+    the container width.</p>
+</section>
+
+<section>
+  <h2>Example 12: auto-fit (Collapses Empty Tracks)</h2>
+  <p><strong>auto-fit</strong> creates as many grid tracks as will fit, but <em>collapses empty tracks to zero</em>.
+    This allows the existing items to stretch and fill the available space.</p>
+  <div class="grid auto-fit-demo">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+  <p class="note">💡 Notice: With only 4 items, auto-fit collapses empty tracks. Items stretch to fill the entire
+    container width.</p>
+</section>
+
+<section>
+  <h2>🔍 Key Difference Summary</h2>
+  <div class="comparison-box">
+    <div class="comparison-item">
+      <h3>auto-fill</h3>
+      <ul>
+        <li>Creates empty tracks</li>
+        <li>Maintains track count</li>
+        <li>Items stay at minimum size</li>
+        <li>Use when: You want consistent grid structure regardless of item count</li>
+      </ul>
+    </div>
+    <div class="comparison-item">
+      <h3>auto-fit</h3>
+      <ul>
+        <li>Collapses empty tracks</li>
+        <li>Reduces track count</li>
+        <li>Items expand to fill space</li>
+        <li>Use when: You want items to grow and fill available space</li>
+      </ul>
+    </div>
+  </div>
+</section>
   </body>
 </html>
